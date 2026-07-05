@@ -1,0 +1,71 @@
+export const translations = {
+  en: {
+    appTitle: "Community Forum",
+    feedTitle: "Course Feed",
+    savedTitle: "Saved Posts",
+    noPosts: "No posts in this course yet.",
+    noSavedPosts: "No saved posts yet.",
+    saveBtn: "Save Post",
+    unsaveBtn: "Unsave Post",
+    loading: "Loading...",
+    courseLabel: "Course",
+    authorLabel: "Author",
+    saves: {
+      zero: "0 saves",
+      one: "1 save",
+      other: "{count} saves",
+    },
+    errorTitle: "Access Error",
+    personaSwitcher: "Select Persona",
+    localeSwitcher: "Language",
+    personas: {
+      unauthenticated: "Unauthenticated Guest",
+      alice: "Alice (Math Student)",
+      bob: "Bob (Physics Student)",
+      charlie: "Charlie (Math & Physics Student)",
+      mallory: "Mallory (Moderator)",
+    },
+    errorCodes: {
+      401: "401 Unauthenticated: Please select a persona to login.",
+      403: "403 Forbidden: You are not enrolled in this course.",
+      404: "404 Not Found: The requested post does not exist.",
+      unknown: "An unexpected error occurred.",
+    },
+  },
+  es: {
+    appTitle: "Foro Comunitario",
+    feedTitle: "Canal del Curso",
+    savedTitle: "Publicaciones Guardadas",
+    noPosts: "Aún no hay publicaciones en este curso.",
+    noSavedPosts: "Aún no hay publicaciones guardadas.",
+    saveBtn: "Guardar",
+    unsaveBtn: "Desguardar",
+    loading: "Cargando...",
+    courseLabel: "Curso",
+    authorLabel: "Autor",
+    saves: {
+      zero: "0 guardados",
+      one: "1 guardado",
+      other: "{count} guardados",
+    },
+    errorTitle: "Error de Acceso",
+    personaSwitcher: "Seleccionar Persona",
+    localeSwitcher: "Idioma",
+    personas: {
+      unauthenticated: "Invitado no Autenticado",
+      alice: "Alice (Estudiante de Matemáticas)",
+      bob: "Bob (Estudiante de Física)",
+      charlie: "Charlie (Estudiante de Mate y Física)",
+      mallory: "Mallory (Moderador)",
+    },
+    errorCodes: {
+      401: "401 No Autenticado: Por favor seleccione una persona para iniciar sesión.",
+      403: "403 Prohibido: No está inscrito en este curso.",
+      404: "404 No Encontrado: La publicación solicitada no existe.",
+      unknown: "Ocurrió un error inesperado.",
+    },
+  },
+};
+
+export type Locale = 'en' | 'es';
+export type TranslationKeys = typeof translations.en;
